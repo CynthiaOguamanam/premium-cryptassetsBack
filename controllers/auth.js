@@ -147,7 +147,7 @@ exports.verifySuccessful = async (req, res, next) => {
       const userid = req.params.id
       console.log(userid)
 
-      const verifyuser = await User.findById(userid)
+      const verifyuser = await User.findById({_id:userid})
 
       if(verifyuser.otp !== req.body.otp){
         return next(createError(404, " Wrong Verificationn Code"))
