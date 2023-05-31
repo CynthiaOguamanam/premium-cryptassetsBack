@@ -80,6 +80,10 @@ const UserSchema = new mongoose.Schema({
     type: String,
     default: 0.00
   },
+  totalReferral:{
+    type: String,
+    default: 0.00
+  },
   withdrawal: {
     type: String,
     default: 0.00

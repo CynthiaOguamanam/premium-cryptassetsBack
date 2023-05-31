@@ -280,3 +280,24 @@ exports.updateTotalEarned = async (req,res, next) => {
        next(e)
     }
 }
+exports.updateTotalReferral = async (req,res, next) => {
+    try{
+        const id = req.params.id
+        const {totalReferral} = req.body
+      if(!totalReferral){
+        res.status(400).json({
+            message: "wrong input"
+        })
+      }else{
+        const totalDepo = await User.findByIdAndUpdate(id,{totalReferral:totalReferral},{
+            new: true
+        })
+        res.status(201).json({
+        message:"Updated successfully",
+        data:totalDepo
+     })
+      }
+    }catch(e){
+       next(e)
+    }
+}

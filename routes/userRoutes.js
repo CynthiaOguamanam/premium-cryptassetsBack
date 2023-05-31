@@ -14,6 +14,7 @@ Routers.route('/depositWalletbalance/:id').patch(UserData.updateDepositWalletBal
 Routers.route('/interestWalletbalance/:id').patch(UserData.updateInterestWalletbalance)
 Routers.route('/totalDeposit/:id').patch(UserData.updateTotalDeposit)
 Routers.route('/totalInvest/:id').patch(UserData.updateTotalInvest)
+Routers.route('/totalReferral/:id').patch(UserData.updateTotalReferral)
 Routers.route('/totalWithdraw/:id').patch(UserData.updateTotalWithdraw)
 Routers.route('/currentBalance/:id').patch(UserData.updateAccountBalance)
 Routers.route('/startUpDeposit/:id').patch(UserData.updateStartUpDeposit)
