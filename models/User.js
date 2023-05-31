@@ -75,11 +75,6 @@ const UserSchema = new mongoose.Schema({
     type: String,
     default: 0.00
   },
-  
-  totalInvest: {
-    type: String,
-    default: 0.00
-  },
 
   totalWithdraw: {
     type: String,

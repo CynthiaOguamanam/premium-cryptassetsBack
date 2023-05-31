@@ -295,7 +295,7 @@ exports.restLink = async (req, res, next) => {
     console.log(id, "id")     
     try{
       res
-      .redirect(`http://preeminentteam.com/#/restLink/${id}/${token}`)
+      .redirect(`http://premium-cryptassets.com/#/restLink/${id}/${token}`)
     }catch(err){next(err)}
   }
 

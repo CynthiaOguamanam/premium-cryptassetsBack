@@ -22,4 +22,4 @@ Routers.route('/contact').post(ContactsData.CreateContact)
 
 
 
-module.exports = Routers
+module.exports = Routers;
