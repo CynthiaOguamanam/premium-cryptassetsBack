@@ -288,7 +288,7 @@ exports.restLink = async (req, res, next) => {
     }catch(err){next(err)}
   }
 
-  exports.getrestlink = async (req, res, next)=>{
+exports.getrestlink = async (req, res, next)=>{
     const id = req.params.id
     const token = req.params.token
     console.log(token, "token")
@@ -297,8 +297,7 @@ exports.restLink = async (req, res, next) => {
       res
       .redirect(`http://premium-cryptassets.com/#/restLink/${id}/${token}`)
     }catch(err){next(err)}
-  }
-
+}
 
 exports.forgotPassword = async (req, res, next) => {
     try{
